@@ -1,6 +1,9 @@
 # Age and Gender Prediction Flask App
 
-![App Demo](demo.png)
+
+![1](https://github.com/Hmzkhnswt/Age-Gender-predictor-Model/assets/95092387/fffdd7bb-d2ad-4327-82ce-e22187acea46)
+![2](https://github.com/Hmzkhnswt/Age-Gender-predictor-Model/assets/95092387/decd0108-3254-4448-9db0-8073f3f4a45b)
+
 
 ## Overview
 
