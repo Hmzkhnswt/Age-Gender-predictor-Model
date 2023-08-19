@@ -57,6 +57,9 @@ This repository contains a Flask web application that utilizes a machine learnin
 
 The machine learning model used in this project is a trained model that predicts age and gender based on input features. The model has been trained on a labeled dataset and achieved an accuracy of X% on the validation set.
 
+## Model Used
+https://drive.google.com/file/d/1Ez1ku-LrSJVDubLrKicv7u7_D0QbTe2C/view?usp=sharing
+
 ## Project Structure
 
 - `app.py`: Main Flask application script.
