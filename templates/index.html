@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Age and Gender Prediction</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f2f2f2;
+        }
+        h2, h1 {
+            text-align: center;
+            padding: 20px;
+            color: #333;
+        }
+
+        #upload-form {
+            text-align: center;
+            margin-top: 20px;
+        }
+        #image-input {
+            display: none;
+        }
+        #upload-button {
+            background-color: #ff5733;
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            font-size: 16px;
+        }
+        #upload-button:hover {
+            background-color: #cc481f;
+        }
+        #uploaded-image {
+            max-width: 300px;
+            display: none;
+            margin: 20px auto;
+            border: 1px solid #ccc;
+        }
+    </style>
+</head>
+<body>
+    <h1>Age and Gender Predictor</h1>
+    <h2>Upload an Image</h2>
+    <form method="POST" enctype="multipart/form-data" id="upload-form">
+        <label for="image-input" id="upload-button">Select an Image</label>
+        <input type="file" name="image" accept="image/*" required id="image-input">
+        <button type="submit" id="upload-button">Predict</button>
+    </form>
+    
+    <!-- Display uploaded image here -->
+    <img src="#" alt="Uploaded Image" id="uploaded-image">
+    
+    <script>
+        const imageInput = document.getElementById('image-input');
+        const uploadedImage = document.getElementById('uploaded-image');
+        
+        imageInput.addEventListener('change', function() {
+            const file = this.files[0];
+            if (file) {
+                uploadedImage.src = URL.createObjectURL(file);
+                uploadedImage.style.display = 'block';
+            } else {
+                uploadedImage.src = '';
+                uploadedImage.style.display = 'none';
+            }
+        });
+    </script>
+</body>
+</html>
